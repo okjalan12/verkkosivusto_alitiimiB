@@ -1,0 +1,328 @@
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: large;
+    font-display: auto;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #6e6440;
+    color: #793d02;
+}
+footer {
+    margin-top: auto;
+    flex-shrink: 0;
+}
+
+/* Navigaatiopalkki --------------------------------------*/
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 40px;
+    height: 200px;
+    background-color: #793d02;
+    border-bottom: 2px solid #000000;
+}
+
+.nav-logo {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+.nav-items {
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+}
+.nav-btn {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 8px solid #000000;
+    letter-spacing: 1px;
+}
+
+.nav-btn:hover {
+    color: #dbf91d;
+    border-color: #333;
+}
+
+.nav-btn--primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+.nav-btn--primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    color: white;
+}
+/* Dropdown-valikko */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000000;
+    min-width: 200px;
+    border: 1px solid #000000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-bottom: 1px solid #000000;
+}
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+.dropdown-content a:hover {
+    color: #dbf91d;
+    background-color: #000000;
+}
+
+/* Hero-osio ja aallon efekti ----------------------------*/
+.hero-image {
+    position: relative;
+    line-height: 0;
+    margin-top: 0px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.wave svg {
+    display: block;
+    width: 100%;
+    height: 180px
+}
+
+/*Hinnoittelu-osio----------------------------------------*/
+.pricing-section {
+  background-color: #524f2f;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;  /* stack the title and cards vertically */
+  gap: 24px;               /* space between each card */
+  max-width: 1000px;       /* stops cards getting too wide on large screens */
+  margin: 0 auto;          /* centers the whole section horizontally */
+}
+
+.pricing-title {
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 16px;
+}
+
+/*--Kortti-tyyli--------------------------------*/
+.pricing-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #161616;
+    border: 1px solid #2a2a2a;
+    padding: 40px;
+    gap: 40px;
+}
+.pricing-card:hover {
+    border-color: #444
+}
+
+/*--Kortti-teksti--------------------------------*/
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.card-description {
+    font-size: 24px;
+    color: #fae1cf;
+    line-height: 1.7;
+    max-width: 600px;
+}
+
+.card-prices {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-prices li {
+    font-size: 22px;
+    color: #cccccc;
+}
+
+.card-prices li span {
+    color: #e8ff00;
+    font-weight: bold;
+}
+
+/*--Kortti-CTA-nappi--------------------------------*/
+.card-btn {
+    flex-shrink: 0;
+    width: 480px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #444;
+    transition: color 0.3s, border-color 0.3s, background-color 0.3s;
+}
+
+.card-btn:hover {
+    color: #0d0d0d;
+    background-color: #e8ff00;
+    border-color: #e8ff00;
+}
+
+/* Footer-osio ----------------------------------------*/
+footer {
+    background-color: #793d02;
+}
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 50px 40px;
+    gap: 40px;
+    border-top: 2px solid #000000;
+}
+
+/* sarake 1: logo ja teksti */
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 400px;
+}
+
+.footer-logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.footer-text {
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* sarake 2: sivuston linkit */
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 80px;
+}
+
+.footer-link {
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.foter-link:hover {
+    color: #dbf91d;
+}
+
+/* sarake 3: sosiaalisen median linkit */
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 80px;
+}
+
+.social-link {
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.social-link:hover {
+    color: #dbf91d;
+}
+
+/* Sarake 4: cta-nappi */
+.cta-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cta-footer .btn {
+    font-size: 30px;
+    padding: 14px 28px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: #0d0d0d;
+    background-color: #e8ff00;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.cta-footer .btn:hover {
+    background-color: #c8dd00;
+    border-color: #c8dd00;
+}
