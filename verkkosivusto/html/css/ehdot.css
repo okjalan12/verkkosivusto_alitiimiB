@@ -19,7 +19,7 @@ footer {
     flex-shrink: 0;
 }
 
-/* Navigaatiopalkki --------------------------------------*/
+/* Navigaatiopalkki */
 .navbar {
     display: flex;
     flex-wrap: wrap;
@@ -104,7 +104,7 @@ footer {
     background-color: #000000;
 }
 
-/* Hero-osio ja aallon efekti ----------------------------*/
+/* Hero-osio ja aallon efekti */
 .hero-image {
     position: relative;
     line-height: 0;
@@ -131,103 +131,31 @@ footer {
     height: 180px
 }
 
-/*Hinnoittelu-osio----------------------------------------*/
-.pricing-section {
-  background-color: #524f2f;
-  padding: 80px 40px;
-  display: flex;
-  flex-direction: column;  
-  gap: 24px;              
-  max-width: 1000px;       
-  margin: 0 auto;          
-}
-
-.pricing-title {
-  font-size: 36px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: white;
-  margin-bottom: 16px;
-}
-
-/*--Kortti-tyyli--------------------------------*/
-.pricing-card {
+/*------------------------- Ehdot-osio ------------------------ */
+.terms-section {
+    padding: 60px 40px;
+    background-color: #6e6440;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    background-color: #161616;
-    border: 1px solid #2a2a2a;
-    padding: 40px;
+    flex-direction: column;
     gap: 40px;
-}
-.pricing-card:hover {
-    border-color: #444
-}
-
-/*--Kortti-teksti--------------------------------*/
-.card-content {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.card-title {
-    font-size: 28px;
+.terms-title {
+    font-size: 38px;
     font-weight: bold;
-    color: white;
-    letter-spacing: 1px;
     text-transform: uppercase;
+    color: #e5fd07;
+    text-align: center;
 }
-
-.card-description {
-    font-size: 24px;
-    color: #fae1cf;
-    line-height: 1.7;
-    max-width: 600px;
-}
-
-.card-prices {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.card-prices li {
-    font-size: 22px;
-    color: #cccccc;
-}
-
-.card-prices li span {
-    color: #e8ff00;
-    font-weight: bold;
-}
-
-/*--Kortti-CTA-nappi--------------------------------*/
-.card-btn {
-    flex-shrink: 0;
-    width: 480px;
-    height: 48px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.terms-text {
     font-size: 28px;
-    font-weight: 300;
-    color: white;
-    text-decoration: none;
-    border: 1px solid #444;
-    transition: color 0.3s, border-color 0.3s, background-color 0.3s;
+    line-height: 1.6;
+    color: #ffffff;
 }
 
-.card-btn:hover {
-    color: #0d0d0d;
-    background-color: #e8ff00;
-    border-color: #e8ff00;
-}
-
-/* Footer-osio ----------------------------------------*/
+/* ------------------------ Footer ----------------- ------- */
 footer {
     background-color: #793d02;
 }
