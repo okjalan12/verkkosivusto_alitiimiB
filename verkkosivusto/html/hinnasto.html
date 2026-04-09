@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Northwind Gym&Recovery</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/hinnasto.css">
 </head>
+
 <body>
 <header>
     <!-- Navigaatio -->
@@ -18,7 +19,7 @@
             <div class="dropdown">
                 <a href="#" class="nav-btn">Jäsenyys▾</a>
                 <div class="dropdown-content">
-                    <a href="hinnasto.html">Hinnasto</a>
+                    <a href="membership.html">Hinnasto</a>
                     <a href="membership.html">Ehdot</a>
                     </div>
                 </div>
@@ -33,7 +34,7 @@
 <main>
     <!-- Kuva aallon efektiillä -->
     <div class="hero-image">
-        <img src="gym_interior.jpg" alt="Gym Interior" />
+        <img src="hinnasto_kuva.jpg" alt="Gym weightroom" />
         <div class="wave">
             <svg viewBox="0 0 1440 80" preserveAspectRatio="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -44,21 +45,56 @@
     </div>
 
     <!-- Tekstit ja CTA-napit -->
+     <div class="pricing-section">
 
-    <section class="hero-content">
+        <h1 class="pricing-title">Hinnasto</h1>
 
-        <p class="hero-text">Treenin jälkeen ei tarvii lähteä muualle palautumaan.</p>
-        <p class="hero-subtext">Kaikki on saman katon alla</p>
-
-        <div class="cta-group">
-            <a href="tutustupalveluihin.html" class="btn">Tutustu palveluihin</a>
-            <a href="otayhteyttä.html" class="btn">Ota yhteyttä</a>
-            <a href="tutustupalveluihin.html" class="btn">Tutustu jäsenyksiin</a>
+        <!--Card 1-->
+        <div class="pricing-card">
+            <div class="card-content">
+                <h2 class="card-title">Perusjäsenyys</h2>
+                <p class="card-description">Saa pääsy kuntosalille kaikkina aukioloaikoina.
+                    Sisältää laitteet, vapaat painot ja pukuhuonetilat.</p>
+                <ul class="card-prices">
+                    <li>Kuukausijäsenyys - <span>39 €/kk</span></li>
+                    <li>Vuosijäsenyys - <span>399 €/vuosi</span></li>
+                    <li>Kertakäynti - <span>15 €</span></li>
+                </ul>
+            </div>
+            <a href="ota_yhteyttä.html" class="card-btn">+</a>
         </div>
 
-        <a href="liikunta.html" class="btn btn--primary btn--solo">Kiinostaako ryhmäliikuntaa?</a>
-    
-    </section>
+        <!--Card 2-->
+        <div class="pricing-card">
+            <div class="card-content">
+                <h3 class="card-title">Premium-jäsenyys</h3>
+                <p class="card-description">Kaikki perusjäsenyyden edut sekä vapaa pääsy
+                    palautumispalveluihin: Kylmäallas, sauna ja venyttelyohjaus.</p>
+                <ul class="card-prices">
+                    <li>Kuukausijäsenyys - <span>59 €/kk</span></li>
+                    <li>Vuosijäsenyys - <span>599 €/vuosi</span></li>
+                    <li>Kertakäynti - <span>25 €</span></li>
+                </ul>
+            </div>
+            <a href="ota_yhteyttä.html" class="card-btn">+</a>
+        </div>
+
+        <!--Card 3-->
+        <div class="pricing-card">
+            <div class="card-content">
+                <h4 class="card-title">Personal Training</h4>
+                <p class="card-description">Henkilökohtainen valmentaja suunnitelee
+                    harjoitusohjelmat juuri sinulle ja ohjaa jokaisen treenin.</p>
+                <ul class="card-prices">
+                    <li>Yksittäinen tapaaminen - <span>75 €</span></li>
+                    <li>5 tapaamista - <span>340 €</span></li>
+                    <li>10 tapaamista - <span>620 €</span></li>
+                </ul>
+            </div>
+            <a href="ota_yhteyttä.html" class="card-btn">+</a>
+        </div>
+
+     </div>
 </main>
 
 <footer>
