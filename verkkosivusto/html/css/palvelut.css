@@ -1,0 +1,328 @@
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: large;
+    font-display: auto;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #6e6440;
+    color: #793d02;
+}
+footer {
+    margin-top: auto;
+    flex-shrink: 0;
+}
+
+/* Navigaatiopalkki */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 40px;
+    height: 200px;
+    background-color: #793d02;
+    border-bottom: 2px solid #000000;
+}
+
+.nav-logo {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+.nav-items {
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+}
+.nav-btn {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 8px solid #000000;
+    letter-spacing: 1px;
+}
+
+.nav-btn:hover {
+    color: #dbf91d;
+    border-color: #333;
+}
+
+.nav-btn--primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+.nav-btn--primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    color: white;
+}
+/* Dropdown-valikko */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000000;
+    min-width: 200px;
+    border: 1px solid #000000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-bottom: 1px solid #000000;
+}
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+.dropdown-content a:hover {
+    color: #dbf91d;
+    background-color: #000000;
+}
+
+/* Hero-osio ja aallon efekti */
+.hero-image {
+    position: relative;
+    line-height: 0;
+    margin-top: 0px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.wave svg {
+    display: block;
+    width: 100%;
+    height: 180px
+}
+
+/* Palvelut-osio */
+.services-section {
+    background-color: #524f2f;
+  padding: 80px 40px;
+  margin-top: 70px;        
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.services-title {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 40px;
+}
+
+/*--GRID------------------*/
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    justify-items: center;
+}
+
+/*----Neljäs ja viides kortti--------------*/
+.service-card:nth-child(4) {
+    grid-column: 1 / 2;
+    justify-self: end
+}
+
+.service-card:nth-child(5) {
+    grid-column: 2 / 3;
+    justify-self: start;
+}
+
+/*--Kortit------------------*/
+.service-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #161616;
+    border: 1px solid #2a2a2a;
+    width: 100%;
+    overflow: hidden;
+}
+.service-card:hover {
+    border-color: whitesmoke;
+}
+
+/*--Korttien kuvat------------------*/
+.card-images {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    /*--Piilotaan skrollausnappulat--*/
+    scrollbar-width: none;
+} /* Firefox */
+.card-images::-webkit-scrollbar {
+    display: none; /* Chrome, Safari ja Opera */
+}
+
+.card-images img {
+    width: 100%;
+    flex-shrink: 0;
+    height: 200px;
+    object-fit: cover;
+    scroll-snap-align: start;
+}
+
+/*--Korttien tekstit------------------*/
+.card-info {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-title {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card-description {
+    font-size: 20px;
+    color: whitesmoke;
+    line-height: 1.5;
+}
+
+/*----- Footer -----*/
+footer {
+    background-color: #793d02;
+}
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 50px 40px;
+    gap: 40px;
+    border-top: 2px solid #000000;
+}
+
+/* sarake 1: logo ja teksti */
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 400px;
+}
+
+.footer-logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.footer-text {
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* sarake 2: sivuston linkit */
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 80px;
+}
+
+.footer-link {
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.foter-link:hover {
+    color: #dbf91d;
+}
+
+/* sarake 3: sosiaalisen median linkit */
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 80px;
+}
+
+.social-link {
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.social-link:hover {
+    color: #dbf91d;
+}
+
+/* Sarake 4: cta-nappi */
+.cta-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cta-footer .btn {
+    font-size: 30px;
+    padding: 14px 28px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: #0d0d0d;
+    background-color: #e8ff00;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.cta-footer .btn:hover {
+    background-color: #c8dd00;
+    border-color: #c8dd00;
+}
+    
