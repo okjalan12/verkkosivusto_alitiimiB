@@ -136,17 +136,14 @@ footer {
   background-color: #524f2f;
   padding: 80px 40px;
   display: flex;
-<<<<<<< HEAD
   flex-direction: column;  
   gap: 24px;              
   max-width: 1000px;       
   margin: 0 auto;          
-=======
   flex-direction: column;  /* stack the title and cards vertically */
   gap: 24px;               /* space between each card */
   max-width: 1000px;       /* stops cards getting too wide on large screens */
   margin: 0 auto;          /* centers the whole section horizontally */
->>>>>>> origin/master
 }
 
 .pricing-title {

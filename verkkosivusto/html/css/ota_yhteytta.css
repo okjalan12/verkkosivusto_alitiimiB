@@ -131,68 +131,50 @@ footer {
     height: 180px
 }
 
-/* Hero-tekstit ja CTA-napit */
-.hero-content {
+/* --- Ota yhteyttä -sivun tyylit --- */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    gap: 40px;
     background-color: #6e6440;
-    text-align: center;
-    padding: 60px 40px;
 }
-
-.hero-text {
-    font-size: 55px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-    margin-bottom: 30px;
-    color: #ffffff;
-}
-.hero-subtext {
+.contact-title {
     font-size: 40px;
     color: #ffffff;
-    max-width: 520px;
-    margin: 0 auto;
-    line-height: 1.6;
-    margin-bottom: 60px;
-}
-
-/*CTA-napit*/
-.cta-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
-    margin-top: 60px;
-}
-/*CTA-napit*/
-.btn {
-    font-size: 50px;
+    text-align: center;
     text-transform: uppercase;
-    text-decoration: none;
-    color: white;
-    background-color: #793d02;
-    padding: 12px 24px;
-    border: 8px solid #000000;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 2px;
+}
+.contact-description {
+    font-size: 25px;
+    color: whitesmoke;
+    text-align: center;
+    max-width: 600px;
+    line-height: 1.6;
+    margin-top: 2px;
+    margin-bottom: 25px;
+}
+
+.contact-item-title {
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
     letter-spacing: 1px;
+    margin-top: 10px;
 }
-.btn:hover {
-    color: #dbf91d;
-    border-color: #333;
-}
-
-/* Yksittäinen CTA-nappi */
-.btn--primary {
-    background-color: #793d02;
-    border-color: #000000;
-    color: white;
-}
-.btn--primary:hover {
-    border-color: #000000;
-    color: #dbf91d;
-}
-
-.btn--solo {
-    display: inline-block;
-    margin-top: 60px;
+.contact-item-info {
+    font-size: 25px;
+    color: #ffffff;
+    text-align: center;
+    max-width: 600px;
+    line-height: 1.6;
+    margin-bottom: 50px;
 }
 
 footer {
