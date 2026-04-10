@@ -19,7 +19,7 @@ footer {
     flex-shrink: 0;
 }
 
-/* Navigaatiopalkki --------------------------------------*/
+/* Navigaatiopalkki */
 .navbar {
     display: flex;
     flex-wrap: wrap;
@@ -104,7 +104,7 @@ footer {
     background-color: #000000;
 }
 
-/* Hero-osio ja aallon efekti ----------------------------*/
+/* Hero-osio ja aallon efekti */
 .hero-image {
     position: relative;
     line-height: 0;
@@ -131,110 +131,70 @@ footer {
     height: 180px
 }
 
-/*Hinnoittelu-osio----------------------------------------*/
-.pricing-section {
-  background-color: #524f2f;
-  padding: 80px 40px;
-  display: flex;
-<<<<<<< HEAD
-  flex-direction: column;  
-  gap: 24px;              
-  max-width: 1000px;       
-  margin: 0 auto;          
-=======
-  flex-direction: column;  /* stack the title and cards vertically */
-  gap: 24px;               /* space between each card */
-  max-width: 1000px;       /* stops cards getting too wide on large screens */
-  margin: 0 auto;          /* centers the whole section horizontally */
->>>>>>> origin/master
+/* Hero-tekstit ja CTA-napit */
+.hero-content {
+    background-color: #6e6440;
+    text-align: center;
+    padding: 60px 40px;
 }
 
-.pricing-title {
-  font-size: 36px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: white;
-  margin-bottom: 16px;
-}
-
-/*--Kortti-tyyli--------------------------------*/
-.pricing-card {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    background-color: #161616;
-    border: 1px solid #2a2a2a;
-    padding: 40px;
-    gap: 40px;
-}
-.pricing-card:hover {
-    border-color: #444
-}
-
-/*--Kortti-teksti--------------------------------*/
-.card-content {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.card-title {
-    font-size: 28px;
+.hero-text {
+    font-size: 55px;
     font-weight: bold;
-    color: white;
-    letter-spacing: 1px;
     text-transform: uppercase;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+.hero-subtext {
+    font-size: 40px;
+    color: #ffffff;
+    max-width: 520px;
+    margin: 0 auto;
+    line-height: 1.6;
+    margin-bottom: 60px;
 }
 
-.card-description {
-    font-size: 24px;
-    color: #fae1cf;
-    line-height: 1.7;
-    max-width: 600px;
-}
-
-.card-prices {
-    list-style: none;
+/*CTA-napit*/
+.cta-group {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.card-prices li {
-    font-size: 22px;
-    color: #cccccc;
-}
-
-.card-prices li span {
-    color: #e8ff00;
-    font-weight: bold;
-}
-
-/*--Kortti-CTA-nappi--------------------------------*/
-.card-btn {
-    flex-shrink: 0;
-    width: 480px;
-    height: 48px;
-    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    font-size: 28px;
-    font-weight: 300;
-    color: white;
+    gap: 50px;
+    margin-top: 60px;
+}
+/*CTA-napit*/
+.btn {
+    font-size: 50px;
+    text-transform: uppercase;
     text-decoration: none;
-    border: 1px solid #444;
-    transition: color 0.3s, border-color 0.3s, background-color 0.3s;
+    color: white;
+    background-color: #793d02;
+    padding: 12px 24px;
+    border: 8px solid #000000;
+    letter-spacing: 1px;
+}
+.btn:hover {
+    color: #dbf91d;
+    border-color: #333;
 }
 
-.card-btn:hover {
-    color: #0d0d0d;
-    background-color: #e8ff00;
-    border-color: #e8ff00;
+/* Yksittäinen CTA-nappi */
+.btn--primary {
+    background-color: #793d02;
+    border-color: #000000;
+    color: white;
+}
+.btn--primary:hover {
+    border-color: #000000;
+    color: #dbf91d;
 }
 
-/* Footer-osio ----------------------------------------*/
+.btn--solo {
+    display: inline-block;
+    margin-top: 60px;
+}
+
 footer {
     background-color: #793d02;
 }
