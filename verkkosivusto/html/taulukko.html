@@ -1,0 +1,222 @@
+<!DOCTYPE html> <!-- ÄLÄ KOPIOI TÄSTÄ MITÄÄN, ÄLÄKÄÄ TEE MUUTOKSIA JOS ET OLE VARMA MITÄ TEET  -->
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northwind Gym&Recovery</title>
+    <link rel="stylesheet" href="css/taulukko.css">
+</head>
+<body>
+<header>
+    <!-- Navigaatio -->
+    <nav class="navbar">
+
+        <a href="index.html" class="nav-logo">
+            <img src="logo.jpg" alt="Northwind Gym&Recovery Logo">
+        </a>
+        
+        <div class="nav-items">
+
+            <div class="dropdown">
+                <a href="#" class="nav-btn">Jäsenyys▾</a>
+                <div class="dropdown-content">
+                    <a href="hinnasto.html">Hinnasto</a>
+                    <a href="ehdot.html">Ehdot</a>
+                    </div>
+                </div>
+                
+                <a href="sijainti.html" class="nav-btn">Sijainti</a>
+                <a href="ota_yhteytta.html" class="nav-btn">Ota yhteyttä</a>
+                <a href="liity.html" class="nav-btn">Liity asiakkaaksi</a>
+            </div>
+    </nav>
+</header>
+
+<main>
+    <!-- Kuva aallon efektiillä -->
+    <div class="hero-image">
+        <img src="taulukko_kuva.jpg" alt="Gym Interior" />
+        <div class="wave">
+            <svg viewBox="0 0 1440 80" preserveAspectRatio="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,50 C360,80 1080,10 1440,5 L1440,80 L0,80 Z" 
+                fill="#6e6440" />
+            </svg>
+        </div>
+    </div>
+
+    <div class="ryhmä-liikunta">
+
+        <!--Vasemman palkki-->
+        <aside class="group-sidebar">
+
+            <h2 class="sidebar-title">Ryhmäliikunta</h2>
+
+            <div class="sidebar-content">
+                <h3 class="sidebar-subtitle">Miten varataan paikka?</h3>
+                <p>Northwind Gym&Recovery tarjoaa myös mahdollisuuden treenata
+                    ammattilaisemme järjestetyssä ryhmäliikunnassa. Kalenterista löytyy kaikki saatavilla olevat ajat.
+                    Varaukset tehdään ainoastaan asiakaspalvelun kautta.
+                    Vastaamme mahdollisimman nopeasti.</p>
+
+                <h4 class="sidebar-subtitle">Säännöt</h4>
+                <p>Saavu paikalle vähintään 5 minuuttia ennen tunnin alkua.
+                    Myöhästyneitä ei voida ottaa mukaan häriön välttämiseksi.
+                    Peruuta varaus hyvissä ajoin jos et pääse paikalle.</p>
+
+                <h4 class="sidebar-subtitle">Varusteet</h4>
+                <p>Sisäliikuntakengät ovat pakolliset kaikilla tunneilla.
+                    Joillakin tunneilla tarvitaan eritysvälineitä, jotka saa lainaksi vastaanotosta.</p>
+            </div>
+
+            <a href="ota_yhteytta.html" class="btn btn--primary sidebar-btn">Ota yhteyttä</a>
+
+        </aside>
+
+        <!--TAULUKKO/KALENTERI-->
+
+        <div class="group-table-wrapper">
+
+            <table class="kalenteri-table">
+
+                <colgroup>
+                    <col style="width: 80px">
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+
+                <thead>
+                    <tr>
+                        <th>Aika</th>
+                        <th>Ma.</th>
+                        <th>Ti.</th>
+                        <th>Ke.</th>
+                        <th>To.</th>
+                        <th>Pe.</th>
+                        <th>La.</th>
+                        <th>Su.</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th>Aamu</th>
+                        <td>
+                            <span class="class-name">Spinning</span>
+                            <span class="class-time">07:00</span>
+                        </td>
+                        <td>
+                            <span class="class-name">Jooga</span>
+                            <span class="class-time">08:00</span>
+                        </td>
+                        <td>
+                            <span class="class-name">Pilates</span>
+                            <span class="class-time">07:30</span>
+                        </td>
+                        <td>
+                            <span class="class-name">Zumba</span>
+                            <span class="class-time">08:30</span>
+                        </td>
+                        <td>
+                            <span class="class-name">CrossFit</span>
+                            <span class="class-time">09:00</span>
+                        </td>
+                        <td class="empty">-</td>
+                        <td class="empty">-</td>
+                    </tr>
+
+                    <tr>
+                        <th>Päivä</th>
+                        <td>
+                            <span class="class-name">BodyPump</span>
+                            <span class="class-time">12:00</span>
+                        </td>
+                        <td class="empty">-</td>
+                        <td>
+                            <span class="class-name">HIIT</span>
+                            <span class="class-time">14:00</span>
+                        </td>
+                        <td class="empty">-</td>
+                        <td>
+                            <span class="class-name">Zumba</span>
+                            <span class="class-time">16:00</span>
+                        </td>
+                        <td>
+                            <span class="class-name">Spinning</span>
+                            <span class="class-time">15:00</span>
+                        </td>
+                        <td class="empty">-</td>
+                    </tr>
+
+                    <tr>
+                        <th>Ilta</th>
+                        <td>
+                            <span class="class-name">Jooga</span>
+                            <span class="class-time">18:00</span>
+                        </td>
+                        <td>
+                            <span class="class-name">Pilates</span>
+                            <span class="class-time">19:00</span>
+                        </td>
+                        <td class="empty">-</td>
+                        <td>
+                            <span class="class-name">Spinning</span>
+                            <span class="class-time">18:30</span>
+                        </td>
+                        <td class="empty">-</td>
+                        <td>
+                            <span class="class-name">BodyPump</span>
+                            <span class="class-time">19:30</span>
+                        </td>
+                        <td>
+                            <span class="class-name">Jooga</span>
+                            <span class="class-time">20:00</span>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    <div class="footer-container">
+
+        <div class="footer-brand">
+            <a href="index.html" class="footer-logo">Northwind Gym&Recovery</a>
+            <p class="footer-text">Northwind Gym & Recovery yhdistää perinteisen kuntosalin ja modernit palautumispalvelut (kylmäaltaat, sauna, hieronta, venyttelyohjaus). 
+        Idea on tarjota kokonaisvaltainen hyvinvointikokemus. Toimitusjohtaja Jenna Korhonen toteaa:
+        "Meidän juttu on se, että treenin jälkeen ei tarvii lähteä muualle palautumaan. 
+        Kaikki on saman katon alla. © 2026 Northwind Gym&Recovery. Kaikki oikeudet pidätetään.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="index.html" class="footer-link">Etusivu</a>
+            <a href="hinnasto.html" class="footer-link">Jäsenyys</a>
+            <a href="palvelut.html" class="footer-link">Palvelut</a>
+            <a href="sijainti.html" class="footer-link">Sijainti</a>
+            <a href="ota_yhteytta.html" class="footer-link">Ota yhteyttä</a>
+        </div>
+    
+        <div class="footer-social">
+            <a href="https://www.facebook.com/NorthwindGymRecovery" class="social-link">Facebook</a>
+            <a href="https://www.instagram.com/NorthwindGymRecovery" class="social-link">Instagram</a>
+            <a href="https://www.twitter.com/NorthwindGymRec" class="social-link">Twitter</a>
+        </div>
+
+        <div class="cta-footer">
+            <a href="liity.html" class="btn btn--primary">Liity asiakkaaksi</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

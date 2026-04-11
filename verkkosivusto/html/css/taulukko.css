@@ -1,3 +1,7 @@
+/* -----ÄLÄ KOPIOI MITÄÄN TÄSTÄ TIEDOSTOSTA. TAULUKKO ON VAATINUT ERILLISTÄ AJATTELUA JA KOKOAMISTA, JOTTA SE TOIMISI HYVIN. 
+TAULUKKO ON TEHTY ERITYISESTI RESPONSIIVISUUTTA JA KÄYTETTÄVYYTTÄ SILMÄN KOKOISEN LAITTEEN KOKOON, JOTTA SE OLISI HELPPO KÄYTTÄÄ JA LUKEA.
+TAULUKKO ON OLLUT MUUTEN VAIKEA TEHTÄVÄ TEHDÄ, JOTTA SE TOIMISI HYVIN ERILAISILLA LAITTEILLA JA NÄYTTÖKOKOISUUKSILLA.------------------------ */
+
 html{
     box-sizing: border-box;
     margin: auto;
@@ -22,6 +26,11 @@ footer {
 
 /* Navigaatiopalkki */
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -31,12 +40,16 @@ footer {
     border-bottom: 2px solid #000000;
 }
 
-.nav-logo {
-    color: white;
-    font-size: 50px;
-    font-weight: bold;
-    text-decoration: none;
-    letter-spacing: 3px;
+.nav-logo img {
+    height: 80px;
+    width: auto;
+    display: block;
+    margin-bottom: 5px;
+}
+@media (max-width: 768px) {
+    .nav-logo img {
+        height: 50px;
+    }
 }
 
 .nav-items {
@@ -160,31 +173,180 @@ footer {
     height: 180px
 }
 
-/*------------------------- Ehdot-osio ------------------------ */
-.terms-section {
-    padding: 60px 40px;
-    background-color: #6e6440;
+/*Rhyhmäliikunta osio*/
+.ryhmä-liikunta {
     display: flex;
-    flex-direction: column;
-    gap: 40px;
-    max-width: 1000px;
-    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 48px;
+    padding: 80px 60px;
+    margin-top: 70px;
+    background-color: #6e6440;
+}
+@media (max-width: 768px) {
+    .ryhmä-liikunta {
+        flex-direction: column;
+        padding: 40px 20px;
+        margin-top: 0;
+    }
+
+    .group-sidebar {
+        width: 100%;
+    }
+    .footer-container {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+    .footer-links,
+    .footer-social {
+        margin-top: 0px;
+        gap: 16px;
+    }
+    .cta-footer {
+        justify-content: flex-start;
+    }
 }
 
-.terms-title {
+/*---Sivupalkki-----------------------*/
+.group-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 400px;
+    flex-shrink: 0;
+}
+
+.sidebar-title {
     font-size: 38px;
     font-weight: bold;
     text-transform: uppercase;
-    color: #e5fd07;
-    text-align: center;
-}
-.terms-text {
-    font-size: 28px;
-    line-height: 1.6;
+    letter-spacing: 2px;
     color: #ffffff;
 }
 
-/* ------------------------ Footer ----------------- ------- */
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sidebar-subtitle {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.sidebar-content p {
+    font-size: 25px;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 100px;
+}
+
+
+.sidebar-btn {
+    font-size: 10px;
+    padding: 7px 18px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: #0d0d0d;
+    background-color: #e8ff00;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/*Table wrapper--------------------------*/
+.group-table-wrapper {
+    flex: 1;
+    overflow-x: auto;
+}
+
+/* ----Taulukko-------------------------- */
+.kalenteri-table {
+    width: 100%;
+    min-width: 700px;
+    height: auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.kalenteri-table thead th {
+    padding: 10px 6px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+    border-bottom: 1px solid #000000;
+    text-align: center;
+}
+
+.kalenteri-table thead th:first-child {
+    text-align: left;
+    color: #444;
+}
+
+.kalenteri-table tbody tr {
+    border-bottom: 1px solid #000000;
+}
+
+.kalenteri-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+
+.kalenteri-table tbody th {
+    padding: 16px 6px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.kalenteri-table tbody td {
+    padding: 16px 6px;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.kalenteri-table tbody td .class-name {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #dbf91d;
+    margin-bottom: 4px;
+}
+
+.kalenteri-table tbody td .class-time {
+    display: block;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.kalenteri-table tbody td.empty {
+    color: #333;
+    font-size: 15px;
+}
+
+.kalenteri-table tbody tr:hover {
+    background-color: #161616;
+}
+
+
+
+/*----- Footer -----*/
 footer {
     background-color: #793d02;
 }
