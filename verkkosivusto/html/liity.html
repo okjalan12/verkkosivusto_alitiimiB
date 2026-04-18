@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Northwind Gym&Recovery</title>
-    <link rel="stylesheet" href="css/ota_yhteytta.css">
+    <link rel="stylesheet" href="css/liity.css">
 </head>
 
 <body>
@@ -13,7 +13,8 @@
     <nav class="navbar">
 
         <a href="index.html" class="nav-logo">
-            <img src="kuvat/logo.jpg" alt="Northwind Gym&Recovery Logo" width="600" height="200"></a>
+            <img src="kuvat/logo.jpg" alt="Northwind Gym&Recovery Logo">
+        </a>
         
         <div class="nav-items">
 
@@ -47,20 +48,27 @@
 
     <!-- Liity jäseneksi -->
     <section class="join-section">
-        <h1><center>Liity asiakkaaksi</center></h1>
-        <p><center>Tervetuloa liittymään Northwind Gym&Recoveryyn! Täytä alla oleva lomake, niin saat viikon 5-7 päivän kuluessa jäsenyyden.</center></p>
+        <h1>Liity asiakkaaksi</h1>
+        <p>Tervetuloa liittymään Northwind Gym&Recoveryyn! Täytä alla oleva lomake, niin saat viikon 5-7 päivän kuluessa jäsenyyden.</p>
 
-        <h2><center>Nimi</center></h2>
-        <center><input type="text" id="name" name="name" placeholder="Etunimi ja Sukunimi" required><center>
-        <h2><center>Sähköposti</center></h2>
-        <center><input type="email" id="email" name="email" placeholder="Sähköpostiosoite" required><center>
-        <h2><center>Puhelin</center></h2>
-        <center><input type="tel" id="phone" name="phone" placeholder="Puhelinnumero" required><center>
-        <h2><center>Osoite</center></h2>
-        <center><textarea id="message" name="message" placeholder="Osoite (katuosoite, postinumero, kaupunki)" required></textarea><center>
-        <center><button type="submit" class="btn btn--primary">Lähetä</button><center>
-        
+        <form class="join-form">
+            <label for="name">Nimi:</label>
+            <input type="text" id="name" name="name" placeholder="Etunimi ja Sukunimi" required>
+
+            <label for="email">Sähköposti:</label>
+            <input type="email" id="email" name="email" placeholder="Sähköpostiosoite" required>
+
+            <label for="phone">Puhelin:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Puhelinnumero" required>
+
+            <label for="address">Osoite:</label>
+            <textarea id="address" name="address" placeholder="Osoite (katuosoite, postinumero, kaupunki)" required></textarea>
+
+            <button type="submit" class="btn btn--primary">Lähetä</button>
+        </form>
     </section>
+</main>
+
 
 <footer>
     <div class="footer-container">

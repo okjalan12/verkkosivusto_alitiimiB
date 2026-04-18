@@ -168,6 +168,79 @@ Nullam interdum, felis ut fermentum porta, risus neque finibus massa, nec sodale
 Phasellus suscipit erat eget facilisis ultrices. Etiam imperdiet augue id facilisis imperdiet. 
 Donec luctus eleifend nisl eget pharetra. Duis magna magna, sodales vitae lorem ut, suscipit malesuada ex. 
 Aenean nec nulla ullamcorper, fringilla sapien dignissim, posuere tellus. In hac habitasse platea dictumst.*/
+.join-section {
+    text-align: center;
+    padding: 60px 40px;
+}
+.join-section h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.join-section p {
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+}
+
+.join-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.join-form label {
+    font-size: 25px;
+    font-weight: bold;
+    color: whitesmoke;
+    align-self: flex-start;
+}
+
+.join-form input,
+.join-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px; 
+    border: 2px solid #000000;
+    color: black;
+    background-color: whitesmoke;
+    text-transform: bold;
+}
+
+.join-form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+btn--primary {
+    font-size: 20px;
+    padding: 12px 24px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: #0d0d0d;
+    background-color: #e8ff00;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 
 /*----- Footer -----*/
 footer {
