@@ -217,7 +217,7 @@ footer {
 }
 
 .sidebar-title {
-    font-size: 38px;
+    font-size: 50px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -231,7 +231,7 @@ footer {
 }
 
 .sidebar-subtitle {
-    font-size: 30px;
+    font-size: 45px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -241,15 +241,15 @@ footer {
 }
 
 .sidebar-content p {
-    font-size: 25px;
-    color: #ffffff;
+    font-size: 35px;
+    color: rgb(246, 228, 153);
     line-height: 1.6;
     margin-bottom: 100px;
 }
 
 
 .sidebar-btn {
-    font-size: 18px;
+    font-size: 25px;
     padding: 7px 18px;
     border: 1px solid white;
     text-decoration: none;
@@ -283,7 +283,7 @@ footer {
 
 .kalenteri-table thead th {
     padding: 10px 6px;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -308,7 +308,7 @@ footer {
 
 .kalenteri-table tbody th {
     padding: 16px 6px;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;

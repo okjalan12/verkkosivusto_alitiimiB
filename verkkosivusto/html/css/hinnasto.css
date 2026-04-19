@@ -176,7 +176,8 @@ footer {
 }
 
 .pricing-title {
-  font-size: 36px;
+    text-align: center;
+  font-size: 55px;
   font-weight: bold;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -207,7 +208,7 @@ footer {
 }
 
 .card-title {
-    font-size: 28px;
+    font-size: 40px;
     font-weight: bold;
     color: white;
     letter-spacing: 1px;
@@ -215,8 +216,8 @@ footer {
 }
 
 .card-description {
-    font-size: 24px;
-    color: #fae1cf;
+    font-size: 28px;
+    color: rgb(246, 228, 153);
     line-height: 1.7;
     max-width: 600px;
 }
@@ -229,7 +230,7 @@ footer {
 }
 
 .card-prices li {
-    font-size: 22px;
+    font-size: 23px;
     color: #cccccc;
 }
 
