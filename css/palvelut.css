@@ -130,6 +130,56 @@ footer {
         font-size: 16px;
         padding: 10px 16px;
     }
+    .hero-image img { height: 300px; }
+    .wave svg { height: 60px; }
+
+    .services-section {
+        padding: 40px 20px;
+        margin-top: 20px;
+    }
+    .services-title {
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .service-card:nth-child(4),
+    .service-card:nth-child(5) {
+        grid-column: auto;
+        justify-self: stretch;
+    }
+
+    
+    .card-images img { height: 180px; }
+    .card-info { padding: 20px; }
+    .card-title { font-size: 22px; }
+    .card-description { font-size: 15px; }
+
+    
+    .footer-container {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+    .footer-brand { max-width: 100%; }
+    .footer-logo { font-size: 22px; }
+    .footer-text { font-size: 16px; }
+    .footer-links,
+    .footer-social {
+        margin-top: 0;
+        gap: 16px;
+    }
+    .footer-link { font-size: 18px; }
+    .footer-social { flex-direction: row; gap: 20px; }
+    .cta-footer { justify-content: flex-start; }
+    .cta-footer .btn {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
 }
 
 

@@ -134,6 +134,58 @@ footer {
         font-size: 16px;
         padding: 10px 16px;
     }
+    
+    .hero-image img { height: 300px; }
+    .wave svg { height: 60px; }
+
+    .ryhmä-liikunta {
+        padding: 40px 20px;
+        margin-top: 20px;
+        gap: 32px;
+    }
+
+    .group-sidebar {
+        gap: 24px;
+    }
+    .sidebar-texts {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .sidebar-title {
+        font-size: 28px;
+    }
+    .sidebar-subtitle {
+        font-size: 22px;
+    }
+    .sidebar-content p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .sidebar-btn {
+        font-size: 18px;
+        padding: 10px 16px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+    .footer-brand { max-width: 100%; }
+    .footer-logo { font-size: 22px; }
+    .footer-text { font-size: 16px; }
+    .footer-links,
+    .footer-social {
+        margin-top: 0;
+        gap: 16px;
+    }
+    .footer-link { font-size: 18px; }
+    .footer-social { flex-direction: row; gap: 20px; }
+    .cta-footer { justify-content: flex-start; }
+    .cta-footer .btn {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
 }
 
 

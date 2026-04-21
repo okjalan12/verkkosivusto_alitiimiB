@@ -130,6 +130,43 @@ footer {
         font-size: 16px;
         padding: 10px 16px;
     }
+    .hero-image img {
+        height: 300px;
+    }
+    .wave svg {
+        height: 80px;
+    }
+    .hero-text {
+        font-size: 28px;
+    }
+    .hero-subtext {
+        font-size: 20px;
+    }
+    .btn {
+        font-size: 20px;
+        padding: 10px 16px;
+    }
+    .cta-group {
+        gap: 16px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-links, .footer-social {
+        margin-top: 0;
+        gap: 16px;
+    }
+    .footer-link {
+        font-size: 18px;
+    }
+    .cta-footer {
+        justify-content: flex-start;
+    }
+    .cta-footer .btn {
+        font-size: 18px;
+    }
 }
 
 
