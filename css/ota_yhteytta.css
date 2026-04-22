@@ -2,9 +2,12 @@ html{
     box-sizing: border-box;
     margin: auto;
     padding: 0;
-    font-size: large;
-    font-display: auto;
+    font-size: 16px;
 }
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     display: flex;
     flex-wrap: wrap;
@@ -25,15 +28,16 @@ footer {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 0 40px;
-    height: auto;
+    gap: 20px;
+    padding: 20px 40px;
     background-color: #793d02;
     border-bottom: 2px solid #000000;
-    padding: 50px 40px;
+    position: relative;
+    z-index: 100;
 }
 
 .nav-logo img {
-    max-height: 200px;
+    max-height: 80px;
     width: auto;
     display: block;
 }
@@ -49,7 +53,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 50px;
+    gap: 24px;
     margin-bottom: 5px;
 }
 .nav-btn {
@@ -57,7 +61,7 @@ footer {
     text-transform: uppercase;
     text-decoration: none;
     color: white;
-    background-color: rgb(194, 58, 0);
+    background-color: transparent;
     padding: 10px 20px;
     border: 4px solid #000000;
     letter-spacing: 1px;
@@ -76,6 +80,7 @@ footer {
 /* Dropdown-valikko */
 .dropdown {
     position: relative;
+    z-index: 1000;
 }
 
 .dropdown-content {
@@ -86,6 +91,7 @@ footer {
     background-color: #000000;
     min-width: 200px;
     border: 1px solid #000000;
+    z-index: 1000;
 }
 
 .dropdown:hover .dropdown-content {
@@ -184,9 +190,10 @@ footer {
 
 .hero-image img {
     width: 100%;
-    height: 600px;
+    height: 420px;
     object-fit: cover;
     display: block;
+    object-position: center 65%;
 }
 
 .wave {
@@ -199,7 +206,7 @@ footer {
 .wave svg {
     display: block;
     width: 100%;
-    height: 180px
+    height: 100px
 }
 
 /* --- Ota yhteyttä -sivun tyylit --- */
@@ -212,7 +219,7 @@ footer {
     background-color: #6e6440;
 }
 .contact-title {
-    font-size: 55px;
+    font-size: 32px;
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
@@ -221,8 +228,8 @@ footer {
     margin-bottom: 2px;
 }
 .contact-description {
-    font-size: 40px;
-    color: rgb(246, 228, 153);
+    font-size: 18px;
+    color: whitesmoke;
     text-align: center;
     max-width: 600px;
     line-height: 1.6;
@@ -231,7 +238,7 @@ footer {
 }
 
 .contact-item-title {
-    font-size: 50px;
+    font-size: 24px;
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
@@ -240,8 +247,8 @@ footer {
     margin-top: 10px;
 }
 .contact-item-info {
-    font-size: 35px;
-    color: rgb(246, 228, 153);
+    font-size: 16px;
+    color: whitesmoke;
     text-align: center;
     max-width: 600px;
     line-height: 1.6;
@@ -274,14 +281,14 @@ footer {
 
 .footer-logo {
     color: white;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: bold;
     text-decoration: none;
     letter-spacing: 2px;
 }
 
 .footer-text {
-    font-size: 20px;
+    font-size: 16px;
     color: #ffffff;
     line-height: 1.6;
 }
@@ -290,12 +297,12 @@ footer {
 .footer-links {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    margin-top: 80px;
+    gap: 12px;
+    margin-top: 0px;
 }
 
 .footer-link {
-    font-size: 30px;
+    font-size: 18px;
     text-decoration: none;
     color: white;
     letter-spacing: 1px;
@@ -309,13 +316,13 @@ footer {
 .footer-social {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    margin-top: 80px;
+    gap: 16px;
+    margin-top: 0px;
 }
 
 .social-icon {
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    height: 24px;
     fill: white;
     display: block;
 }
@@ -331,8 +338,8 @@ footer {
 }
 
 .cta-footer .btn {
-    font-size: 30px;
-    padding: 14px 28px;
+    font-size: 18px;
+    padding: 12px 22px;
     border: 1px solid white;
     text-decoration: none;
     color: #0d0d0d;

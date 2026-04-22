@@ -32,8 +32,8 @@ footer {
     padding: 20px 40px;
     background-color: #793d02;
     border-bottom: 2px solid #000000;
-    z-index: 100;
-    position: relative;
+        position: relative;
+        z-index: 100;
 }
 
 .nav-logo img {
@@ -113,67 +113,6 @@ footer {
     background-color: #000000;
 }
 
-/*------Varmistetaan responsiivisuus------*/
-@media (max-width: 768px) {
-    .navbar {
-        height: auto;
-        padding: 20px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
-    }
-    .nav-logo {
-        font-size: 28px;
-    }
-    .nav-items {
-        margin-left: 0;
-        width: 100%;
-        gap: 12px;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .nav-btn {
-        font-size: 16px;
-        padding: 10px 16px;
-    }
-    .hero-image img { height: 300px; }
-    .wave svg { height: 60px; }
-
-    .terms-section {
-        padding: 40px 20px;
-        gap: 24px;
-    }
-    .terms-title {
-        font-size: 28px;
-    }
-    .terms-text {
-        font-size: 16px;
-        line-height: 1.6;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        padding: 30px 20px;
-        gap: 30px;
-    }
-    .footer-brand { max-width: 100%; }
-    .footer-logo { font-size: 22px; }
-    .footer-text { font-size: 16px; }
-    .footer-links,
-    .footer-social {
-        margin-top: 0;
-        gap: 16px;
-    }
-    .footer-link { font-size: 18px; }
-    .footer-social { flex-direction: row; gap: 20px; }
-    .cta-footer { justify-content: flex-start; }
-    .cta-footer .btn {
-        font-size: 18px;
-        padding: 12px 20px;
-    }
-}
-
-
 /* Hero-osio ja aallon efekti */
 .hero-image {
     position: relative;
@@ -186,6 +125,7 @@ footer {
     height: 420px;
     object-fit: cover;
     display: block;
+    object-position: center 20%;
 }
 
 .wave {
@@ -201,31 +141,24 @@ footer {
     height: 100px
 }
 
-/*------------------------- Ehdot-osio ------------------------ */
-.terms-section {
-    padding: 60px 40px;
+
+.location-section {
     background-color: #6e6440;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    max-width: 1000px;
+    color: white;
+    text-align: center;
+    padding: 60px 40px;
+}
+.location-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.location-section p {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 600px;
     margin: 0 auto;
 }
 
-.terms-title {
-    font-size: 32px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: white;
-    text-align: center;
-}
-.terms-text {
-    font-size: 16px;
-    line-height: 1.6;
-    color: whitesmoke;
-}
-
-/* ------------------------ Footer ----------------- ------- */
 /*----- Footer -----*/
 footer {
     background-color: #793d02;
@@ -323,4 +256,66 @@ footer {
 .cta-footer .btn:hover {
     background-color: #c8dd00;
     border-color: #c8dd00;
+}
+
+/*------Varmistetaan responsiivisuus------*/
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    .nav-logo {
+        font-size: 28px;
+    }
+    .nav-items {
+        margin-left: 0;
+        width: 100%;
+        gap: 12px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-btn {
+        font-size: 16px;
+        padding: 10px 16px;
+    }
+    .hero-image img {
+        height: 300px;
+    }
+    .wave svg {
+        height: 80px;
+    }
+    .hero-text {
+        font-size: 28px;
+    }
+    .hero-subtext {
+        font-size: 20px;
+    }
+    .btn {
+        font-size: 20px;
+        padding: 10px 16px;
+    }
+    .cta-group {
+        gap: 16px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-links, .footer-social {
+        margin-top: 0;
+        gap: 16px;
+    }
+    .footer-link {
+        font-size: 18px;
+    }
+    .cta-footer {
+        justify-content: flex-start;
+    }
+    .cta-footer .btn {
+        font-size: 18px;
+    }
 }
